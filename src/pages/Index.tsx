@@ -49,7 +49,7 @@ const Index = () => {
               <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                 <Icon name="Droplets" size={18} className="text-white" />
               </div>
-              <span className="text-xl font-bold text-black">AeroGlue</span>
+              <span className="text-xl font-bold text-black">EXTRABOND</span>
             </div>
             
             <nav className="hidden md:flex items-center space-x-8">
@@ -114,13 +114,13 @@ const Index = () => {
             
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold text-black leading-tight">
-                Аэрозольный клей
-                <span className="block text-gray-600">нового поколения</span>
+                EXTRABOND & RANGO FLEX
+                <span className="block text-gray-600">Профессиональная линейка клеев</span>
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
-                Профессиональный клей российского производства для промышленного и бытового применения. 
-                Мгновенная фиксация, долговечность и универсальность.
+                Высококачественные аэрозольные клеи для различных сфер применения. 
+                Быстрое схватывание, прочное соединение, широкий спектр материалов.
               </p>
             </div>
 
@@ -137,16 +137,16 @@ const Index = () => {
 
             <div className="flex items-center space-x-8 pt-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-black">24ч</div>
+                <div className="text-2xl font-bold text-black">500мл</div>
+                <div className="text-sm text-gray-600">Объем баллона</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-black">30сек</div>
                 <div className="text-sm text-gray-600">Время схватывания</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-black">-40°C</div>
-                <div className="text-sm text-gray-600">Минимальная температура</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-black">+80°C</div>
-                <div className="text-sm text-gray-600">Максимальная температура</div>
+                <div className="text-2xl font-bold text-black">8м²</div>
+                <div className="text-sm text-gray-600">Покрытие</div>
               </div>
             </div>
           </div>
@@ -154,13 +154,20 @@ const Index = () => {
           <div className="relative animate-scale-in">
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl transform rotate-3"></div>
             <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
-              <img 
-                src="/img/46aaf41b-11cc-44db-b390-5f7e4432c86f.jpg" 
-                alt="Аэрозольный клей AeroGlue" 
-                className="w-full h-96 object-cover rounded-2xl"
-              />
+              <div className="grid grid-cols-2 gap-4 h-96">
+                <img 
+                  src="https://cdn.poehali.dev/files/10a29a86-975a-4cd8-9604-5a6ae119f525.png" 
+                  alt="EXTRABOND F60 Contact Spray Adhesive" 
+                  className="w-full h-full object-contain"
+                />
+                <img 
+                  src="https://cdn.poehali.dev/files/d048ca7c-f4d4-4b7f-aeeb-8badc0558a3d.png" 
+                  alt="RANGO FLEX Mah Contact Adhesive" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
               <div className="absolute top-4 right-4 bg-black text-white px-3 py-1 rounded-full text-sm font-medium">
-                Новинка
+                Профессиональная линейка
               </div>
             </div>
           </div>
@@ -195,58 +202,164 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Product Section */}
+      {/* Product Lineup Section */}
       <section id="product" className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <img 
-                src="/img/6e850801-dd5f-4425-9b3f-5f701d81f23a.jpg" 
-                alt="Применение аэрозольного клея в производстве" 
-                className="w-full h-96 object-cover rounded-2xl shadow-lg"
-              />
-            </div>
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
+              Линейка продуктов
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Профессиональные клеи для различных сфер применения
+            </p>
+          </div>
 
-            <div className="space-y-8 animate-fade-in">
-              <div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
-                  Широкий спектр применения
-                </h2>
-                <p className="text-xl text-gray-600">
-                  Наш аэрозольный клей подходит для различных отраслей промышленности и бытового использования
-                </p>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                {applications.map((app, index) => (
-                  <div key={index} className="flex items-center space-x-2 animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
-                    <Icon name="CheckCircle" size={20} className="text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">{app}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-gray-50 rounded-2xl p-6">
-                <h3 className="text-xl font-semibold text-black mb-4">Технические характеристики</h3>
-                <div className="space-y-3">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {/* EXTRABOND F60 */}
+            <Card className="p-6 hover-scale animate-fade-in">
+              <div className="text-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/10a29a86-975a-4cd8-9604-5a6ae119f525.png" 
+                  alt="EXTRABOND F60 Contact Spray Adhesive" 
+                  className="w-full h-64 object-contain mb-4"
+                />
+                <h3 className="text-xl font-bold text-black mb-2">EXTRABOND F60</h3>
+                <p className="text-blue-600 font-medium mb-4">Contact Spray Adhesive</p>
+                <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Объем баллона:</span>
-                    <span className="font-medium">400 мл</span>
+                    <span>Объем:</span>
+                    <span>500 мл</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Время схватывания:</span>
-                    <span className="font-medium">30-60 сек</span>
+                    <span>Тип:</span>
+                    <span>Контактный</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Температура применения:</span>
-                    <span className="font-medium">-40°C до +80°C</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Срок хранения:</span>
-                    <span className="font-medium">24 месяца</span>
+                    <span>Применение:</span>
+                    <span>Универсальный</span>
                   </div>
                 </div>
               </div>
+            </Card>
+
+            {/* RANGO FLEX Mah */}
+            <Card className="p-6 hover-scale animate-fade-in" style={{animationDelay: '0.1s'}}>
+              <div className="text-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/d048ca7c-f4d4-4b7f-aeeb-8badc0558a3d.png" 
+                  alt="RANGO FLEX Mah Contact Adhesive" 
+                  className="w-full h-64 object-contain mb-4"
+                />
+                <h3 className="text-xl font-bold text-black mb-2">RANGO FLEX Mah</h3>
+                <p className="text-yellow-600 font-medium mb-4">Next Generation Contact Adhesive</p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex justify-between">
+                    <span>Объем:</span>
+                    <span>500 мл</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Тип:</span>
+                    <span>Контактный</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Применение:</span>
+                    <span>Новое поколение</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* EXTRABOND F40 */}
+            <Card className="p-6 hover-scale animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <div className="text-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/ac50a0f8-75ab-40e6-8143-11f9ce7eadb7.png" 
+                  alt="EXTRABOND F40 Multipurpose Spray Adhesive" 
+                  className="w-full h-64 object-contain mb-4"
+                />
+                <h3 className="text-xl font-bold text-black mb-2">EXTRABOND F40</h3>
+                <p className="text-green-600 font-medium mb-4">Multipurpose Spray Adhesive</p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex justify-between">
+                    <span>Объем:</span>
+                    <span>500 мл</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Тип:</span>
+                    <span>Универсальный</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Применение:</span>
+                    <span>Многоцелевой</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* EXTRABOND T200 */}
+            <Card className="p-6 hover-scale animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <div className="text-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/387ecbcd-1427-4d78-836b-1acebaa1e0ab.png" 
+                  alt="EXTRABOND T200 Carpet Tile Tackifier" 
+                  className="w-full h-64 object-contain mb-4"
+                />
+                <h3 className="text-xl font-bold text-black mb-2">EXTRABOND T200</h3>
+                <p className="text-pink-600 font-medium mb-4">Carpet Tile Tackifier</p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex justify-between">
+                    <span>Объем:</span>
+                    <span>500 мл</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Тип:</span>
+                    <span>Ковровый</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Применение:</span>
+                    <span>Плитка и ковры</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* EXTRABOND */}
+            <Card className="p-6 hover-scale animate-fade-in" style={{animationDelay: '0.4s'}}>
+              <div className="text-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/3e1c6e1d-c713-49ff-bdd4-41e4fa55e122.png" 
+                  alt="EXTRABOND Spray Adhesive" 
+                  className="w-full h-64 object-contain mb-4"
+                />
+                <h3 className="text-xl font-bold text-black mb-2">EXTRABOND 10</h3>
+                <p className="text-gray-600 font-medium mb-4">Advanced Technology</p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex justify-between">
+                    <span>Объем:</span>
+                    <span>400 мл</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Тип:</span>
+                    <span>Профессиональный</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Применение:</span>
+                    <span>Промышленность</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="mt-16 text-center animate-fade-in">
+            <h3 className="text-2xl font-bold text-black mb-6">Области применения</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+              {applications.map((app, index) => (
+                <div key={index} className="flex items-center space-x-2 justify-center animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+                  <Icon name="CheckCircle" size={20} className="text-green-500 flex-shrink-0" />
+                  <span className="text-gray-700">{app}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -276,7 +389,7 @@ const Index = () => {
                   <Icon name="Mail" size={24} className="text-black" />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                <p className="text-gray-300">info@aeroglue.ru</p>
+                <p className="text-gray-300">info@extrabond.ru</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
@@ -309,11 +422,11 @@ const Index = () => {
               <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                 <Icon name="Droplets" size={18} className="text-white" />
               </div>
-              <span className="text-xl font-bold text-black">AeroGlue</span>
+              <span className="text-xl font-bold text-black">EXTRABOND</span>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-gray-600">© 2024 AeroGlue. Все права защищены.</p>
-              <p className="text-sm text-gray-500">Аэрозольный клей российского производства</p>
+              <p className="text-gray-600">© 2024 EXTRABOND. Все права защищены.</p>
+              <p className="text-sm text-gray-500">Профессиональная линейка клеев</p>
             </div>
           </div>
         </div>
